@@ -1,0 +1,678 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Contact Us - Get Help with RAM Sales | RAM Buying"
+  description="Contact RAM Buying for help with computer memory evaluation, quotes, shipping, or any questions about our RAM purchasing services."
+>
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>Contact Our RAM Specialists</h1>
+      <p class="hero-subtitle">
+        Get expert help with your computer memory evaluation and sales. Our team is here to assist you.
+      </p>
+      <div class="parody-disclaimer">
+        <span class="disclaimer-icon">🎭</span>
+        <span class="disclaimer-text">Parody concept, real service - we actually buy your RAM!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Methods -->
+  <section class="contact-methods">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="methods-grid">
+        <div class="contact-card primary">
+          <div class="contact-icon">📞</div>
+          <h3 class="contact-title">Phone Support</h3>
+          <p class="contact-description">
+            Speak directly with our RAM specialists for immediate assistance with quotes and technical questions.
+          </p>
+          <a href="tel:+1-555-RAM-BUYS" class="contact-action">Call (555) RAM-BUYS</a>
+          <div class="contact-hours">
+            <strong>Hours:</strong> Monday-Friday, 9:00 AM - 6:00 PM EST
+          </div>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3 class="contact-title">Email Support</h3>
+          <p class="contact-description">
+            Send us detailed questions about your RAM modules or get help with the evaluation process.
+          </p>
+          <a href="mailto:support@rambuying.com" class="contact-action">Email Support</a>
+          <div class="contact-hours">
+            <strong>Response:</strong> Within 4 hours during business days
+          </div>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">💬</div>
+          <h3 class="contact-title">Live Chat</h3>
+          <p class="contact-description">
+            Get instant help during business hours with our live chat support system.
+          </p>
+          <button class="contact-action chat-button">Start Live Chat</button>
+          <div class="contact-hours">
+            <strong>Available:</strong> Monday-Friday, 9:00 AM - 6:00 PM EST
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-header">
+          <h2 class="form-title">Send Us a Message</h2>
+          <p class="form-description">
+            Have a specific question or need detailed assistance? Fill out the form below and we'll get back to you promptly.
+          </p>
+        </div>
+        
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First Name *</label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                class="form-input" 
+                required 
+                aria-describedby="firstName-error"
+              >
+              <div id="firstName-error" class="error-message" role="alert"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last Name *</label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                class="form-input" 
+                required 
+                aria-describedby="lastName-error"
+              >
+              <div id="lastName-error" class="error-message" role="alert"></div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                required 
+                aria-describedby="email-error"
+              >
+              <div id="email-error" class="error-message" role="alert"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="form-input" 
+                aria-describedby="phone-error"
+              >
+              <div id="phone-error" class="error-message" role="alert"></div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject *</label>
+            <select id="subject" name="subject" class="form-select" required aria-describedby="subject-error">
+              <option value="">Select a topic...</option>
+              <option value="quote">RAM Quote Question</option>
+              <option value="technical">Technical Support</option>
+              <option value="shipping">Shipping & Logistics</option>
+              <option value="payment">Payment & Billing</option>
+              <option value="general">General Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+            <div id="subject-error" class="error-message" role="alert"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-textarea" 
+              rows="6" 
+              required 
+              placeholder="Please provide details about your question or the RAM modules you'd like to sell..."
+              aria-describedby="message-error"
+            ></textarea>
+            <div id="message-error" class="error-message" role="alert"></div>
+          </div>
+          
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter" class="form-checkbox">
+              <span class="checkbox-text">
+                I'd like to receive updates about RAM market trends and pricing (optional)
+              </span>
+            </label>
+          </div>
+          
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Info -->
+  <section class="additional-info">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card">
+          <h3 class="info-title">Business Address</h3>
+          <div class="info-content">
+            <p>RAM Buying Headquarters<br>
+            123 Memory Lane<br>
+            Tech City, TC 12345<br>
+            United States</p>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <h3 class="info-title">Shipping Address</h3>
+          <div class="info-content">
+            <p>For sending RAM modules:<br>
+            RAM Buying Processing Center<br>
+            456 Hardware Boulevard<br>
+            Tech City, TC 12345<br>
+            United States</p>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <h3 class="info-title">Response Times</h3>
+          <div class="info-content">
+            <ul>
+              <li><strong>Phone:</strong> Immediate during business hours</li>
+              <li><strong>Live Chat:</strong> Under 2 minutes</li>
+              <li><strong>Email:</strong> Within 4 hours</li>
+              <li><strong>Contact Form:</strong> Within 24 hours</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .contact-hero {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .parody-disclaimer {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .disclaimer-icon {
+    font-size: 1rem;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a365d;
+  }
+
+  /* Contact Methods */
+  .contact-methods {
+    padding: 4rem 0;
+    background: white;
+  }
+
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .contact-card {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .contact-card.primary {
+    background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+    color: white;
+    border-color: #2c5aa0;
+  }
+
+  .contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+  }
+
+  .contact-card.primary .contact-title {
+    color: white;
+  }
+
+  .contact-description {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .contact-card.primary .contact-description {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .contact-action {
+    display: inline-block;
+    background: #3182ce;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .contact-action:hover {
+    background: #2c5aa0;
+    color: white;
+  }
+
+  .contact-card.primary .contact-action {
+    background: white;
+    color: #3182ce;
+  }
+
+  .contact-card.primary .contact-action:hover {
+    background: #f7fafc;
+    color: #2c5aa0;
+  }
+
+  .contact-hours {
+    font-size: 0.875rem;
+    color: #718096;
+  }
+
+  .contact-card.primary .contact-hours {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Contact Form Section */
+  .contact-form-section {
+    padding: 4rem 0;
+    background: #f7fafc;
+  }
+
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .form-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a365d;
+  }
+
+  .form-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Form Styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-label {
+    font-weight: 500;
+    color: #2d3748;
+    font-size: 0.875rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+  }
+
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+
+  .form-checkbox {
+    margin-top: 0.25rem;
+  }
+
+  .checkbox-text {
+    color: #4a5568;
+    line-height: 1.5;
+  }
+
+  .form-submit {
+    background: #3182ce;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+  }
+
+  .form-submit:hover {
+    background: #2c5aa0;
+  }
+
+  .error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    min-height: 1.25rem;
+  }
+
+  /* Additional Info */
+  .additional-info {
+    padding: 4rem 0;
+    background: white;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .info-card {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .info-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+  }
+
+  .info-content p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .info-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .info-content li {
+    padding: 0.25rem 0;
+    color: #4a5568;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.25rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .methods-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .form-container {
+      padding: 2rem;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .container {
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content {
+      padding: 0 1rem;
+    }
+
+    .hero-content h1 {
+      font-size: 1.875rem;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+    }
+
+    .form-container {
+      padding: 1.5rem;
+    }
+
+    .contact-card {
+      padding: 1.5rem;
+    }
+  }
+
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .contact-card,
+    .contact-action,
+    .form-input,
+    .form-select,
+    .form-textarea,
+    .form-submit {
+      transition: none;
+    }
+
+    .contact-card:hover {
+      transform: none;
+    }
+  }
+
+  @media (prefers-contrast: high) {
+    .contact-card,
+    .form-container,
+    .info-card {
+      border-width: 2px;
+    }
+  }
+</style>
+
+<script>
+  // Form validation and submission
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form') as HTMLFormElement;
+    const chatButton = document.querySelector('.chat-button') as HTMLButtonElement;
+    
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic form validation
+        const requiredFields = form.querySelectorAll('[required]');
+        let isValid = true;
+        
+        requiredFields.forEach(field => {
+          const input = field as HTMLInputElement;
+          const errorElement = document.getElementById(input.name + '-error');
+          
+          if (!input.value.trim()) {
+            if (errorElement) {
+              errorElement.textContent = 'This field is required';
+            }
+            isValid = false;
+          } else {
+            if (errorElement) {
+              errorElement.textContent = '';
+            }
+          }
+        });
+        
+        // Email validation
+        const emailInput = form.querySelector('#email') as HTMLInputElement;
+        const emailError = document.getElementById('email-error');
+        if (emailInput && emailInput.value) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(emailInput.value)) {
+            if (emailError) {
+              emailError.textContent = 'Please enter a valid email address';
+            }
+            isValid = false;
+          }
+        }
+        
+        if (isValid) {
+          // In a real application, this would submit to a server
+          alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+          form.reset();
+        }
+      });
+    }
+    
+    // Chat button functionality
+    if (chatButton) {
+      chatButton.addEventListener('click', function() {
+        // In a real application, this would open a chat widget
+        alert('Live chat is currently unavailable. Please call us at (555) RAM-BUYS or send an email for immediate assistance.');
+      });
+    }
+  });
+</script>

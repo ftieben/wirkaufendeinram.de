@@ -1,0 +1,401 @@
+---
+/**
+ * Footer Component
+ * Provides legal links, contact information, and site-wide footer content
+ */
+---
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- Company Info -->
+      <div class="footer-section">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="8" width="24" height="16" rx="2" fill="#3182ce" stroke="#2c5aa0" stroke-width="2"/>
+              <rect x="6" y="12" width="4" height="8" rx="1" fill="#ffffff"/>
+              <rect x="12" y="12" width="4" height="8" rx="1" fill="#ffffff"/>
+              <rect x="18" y="12" width="4" height="8" rx="1" fill="#ffffff"/>
+              <rect x="24" y="12" width="2" height="8" rx="1" fill="#ffffff"/>
+            </svg>
+          </div>
+          <div class="footer-brand-text">
+            <h3 class="footer-brand-name">RAM Buying</h3>
+            <p class="footer-tagline">Your trusted partner for computer memory sales</p>
+          </div>
+        </div>
+        <p class="footer-description">
+          We provide professional RAM evaluation and purchasing services, 
+          making it easy to sell your computer memory modules at fair market prices.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="footer-nav-list">
+            <li><a href="/" class="footer-link">Get Quote</a></li>
+            <li><a href="/process" class="footer-link">How It Works</a></li>
+            <li><a href="/help" class="footer-link">Help & FAQ</a></li>
+            <li><a href="/contact" class="footer-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h4 class="footer-heading">Contact Info</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <div class="contact-details">
+              <span class="contact-label">Phone:</span>
+              <a href="tel:+1-555-RAM-BUYS" class="footer-link">(555) RAM-BUYS</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">✉️</span>
+            <div class="contact-details">
+              <span class="contact-label">Email:</span>
+              <a href="mailto:quotes@rambuying.com" class="footer-link">quotes@rambuying.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">🕒</span>
+            <div class="contact-details">
+              <span class="contact-label">Hours:</span>
+              <span class="contact-text">Mon-Fri 9AM-6PM EST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal & Support -->
+      <div class="footer-section">
+        <h4 class="footer-heading">Legal & Support</h4>
+        <nav class="footer-nav" aria-label="Legal navigation">
+          <ul class="footer-nav-list">
+            <li><a href="/terms" class="footer-link">Terms of Service</a></li>
+            <li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
+            <li><a href="/shipping" class="footer-link">Shipping Info</a></li>
+            <li><a href="/warranty" class="footer-link">Warranty Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <div class="copyright">
+          <p>&copy; {new Date().getFullYear()} RAM Buying. All rights reserved.</p>
+          <p class="disclaimer">
+            🎭 <strong>PARODY WEBSITE:</strong> This is a humorous parody of automotive buying sites like "wirkaufendeinauto.de" but for computer RAM! 
+            While the concept is satirical, all RAM purchasing services are genuine and legally compliant.
+          </p>
+        </div>
+        
+        <div class="footer-badges">
+          <div class="badge" title="Secure transactions">
+            <span class="badge-icon" aria-hidden="true">🔒</span>
+            <span class="badge-text">Secure</span>
+          </div>
+          <div class="badge" title="Fast quotes">
+            <span class="badge-icon" aria-hidden="true">⚡</span>
+            <span class="badge-text">Fast Quotes</span>
+          </div>
+          <div class="badge" title="Fair pricing">
+            <span class="badge-icon" aria-hidden="true">💰</span>
+            <span class="badge-text">Fair Prices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #1a202c;
+    color: #e2e8f0;
+    margin-top: auto;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Main Footer Content */
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0 2rem;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Brand Section */
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-logo {
+    flex-shrink: 0;
+  }
+
+  .footer-brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .footer-tagline {
+    font-size: 0.875rem;
+    color: #a0aec0;
+    margin: 0;
+  }
+
+  .footer-description {
+    color: #cbd5e0;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Section Headings */
+  .footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    border-bottom: 2px solid #3182ce;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Navigation Lists */
+  .footer-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-link {
+    color: #cbd5e0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-block;
+  }
+
+  .footer-link:hover {
+    color: #63b3ed;
+  }
+
+  .footer-link:focus {
+    outline: 2px solid #63b3ed;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Contact Information */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .contact-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .contact-label {
+    font-size: 0.875rem;
+    color: #a0aec0;
+    font-weight: 500;
+  }
+
+  .contact-text {
+    color: #cbd5e0;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    border-top: 1px solid #2d3748;
+    padding: 1.5rem 0;
+  }
+
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .copyright {
+    flex: 1;
+  }
+
+  .copyright p {
+    margin: 0 0 0.5rem 0;
+    color: #a0aec0;
+    font-size: 0.875rem;
+  }
+
+  .disclaimer {
+    font-size: 0.75rem !important;
+    color: #a0aec0 !important;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .disclaimer strong {
+    color: #cbd5e0 !important;
+    font-weight: 600;
+  }
+
+  /* Footer Badges */
+  .footer-badges {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #2d3748;
+    border-radius: 20px;
+    border: 1px solid #4a5568;
+  }
+
+  .badge-icon {
+    font-size: 1rem;
+  }
+
+  .badge-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #e2e8f0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-main {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .footer-bottom-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .footer-badges {
+      align-self: stretch;
+      justify-content: center;
+    }
+
+    .badge {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 0 1rem;
+    }
+
+    .footer-main {
+      padding: 1.5rem 0 1rem;
+    }
+
+    .footer-brand {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .footer-badges {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      flex: none;
+    }
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .site-footer {
+      border-top: 2px solid #e2e8f0;
+    }
+
+    .footer-link:focus {
+      outline-width: 3px;
+    }
+
+    .badge {
+      border-width: 2px;
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .footer-link {
+      transition: none;
+    }
+  }
+
+  /* Print styles */
+  @media print {
+    .site-footer {
+      background: transparent;
+      color: #000;
+      border-top: 1px solid #000;
+    }
+
+    .footer-badges {
+      display: none;
+    }
+
+    .footer-main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

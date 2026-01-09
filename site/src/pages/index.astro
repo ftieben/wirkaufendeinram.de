@@ -1,0 +1,366 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EvaluationForm from '../components/EvaluationForm.astro';
+---
+
+<BaseLayout 
+  title="RAM Buying - Get Instant Quotes for Your Computer Memory"
+  description="Sell your RAM modules quickly and easily. Get instant quotes for DDR3, DDR4, and DDR5 memory with our professional evaluation service."
+>
+  <!-- Parody Notice -->
+  <div class="parody-banner">
+    <div class="parody-content">
+      <span class="parody-icon">🎭</span>
+      <span class="parody-text">
+        <strong>PARODY WEBSITE:</strong> This is a humorous parody of car buying sites, but for computer RAM! 
+        While the concept is satirical, all RAM purchasing services are genuine and legally compliant.
+      </span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Sell Your RAM, Get Cash Fast</h1>
+      <p class="hero-subtitle">
+        Professional evaluation and instant quotes for all types of computer memory. 
+        From DDR3 to DDR5, we buy it all at competitive market prices.
+      </p>
+      <div class="parody-note">
+        <em>📝 Inspired by automotive buying platforms, but we're all about that memory life!</em>
+      </div>
+      <div class="hero-features">
+        <div class="feature">
+          <span class="feature-icon" aria-hidden="true">⚡</span>
+          <span class="feature-text">Instant Quotes</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon" aria-hidden="true">💰</span>
+          <span class="feature-text">Fair Prices</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon" aria-hidden="true">🚚</span>
+          <span class="feature-text">Free Shipping</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evaluation Form Section -->
+  <section class="form-section">
+    <EvaluationForm />
+  </section>
+
+  <!-- Trust Indicators -->
+  <section class="trust-section">
+    <div class="trust-content">
+      <h2 class="trust-title">Why Choose RAM Buying? 🎭</h2>
+      <div class="parody-subtitle">
+        <em>All the trust of a car dealership, but for your computer's memory!</em>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">🔒</div>
+          <h3 class="trust-item-title">Secure & Safe</h3>
+          <p class="trust-item-text">
+            Your data and transactions are protected with industry-standard security measures. 
+            (Just like a car lot, but with better encryption!)
+          </p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">⭐</div>
+          <h3 class="trust-item-title">Expert Evaluation</h3>
+          <p class="trust-item-text">
+            Our team of hardware specialists ensures accurate pricing based on current market conditions.
+            (We know RAM like car dealers know... cars!)
+          </p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">📞</div>
+          <h3 class="trust-item-title">Personal Support</h3>
+          <p class="trust-item-text">
+            Get help from real people who understand computer hardware and can answer your questions.
+            (No pushy sales tactics, we promise!)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Parody Banner */
+  .parody-banner {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    border-bottom: 3px solid #f6ad55;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .parody-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .parody-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .parody-text {
+    color: #744210;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .parody-text strong {
+    color: #2d3748;
+    font-weight: 700;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0;
+    margin: -2rem -1rem 2rem -1rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .parody-note {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .feature-icon {
+    font-size: 1.25rem;
+  }
+
+  .feature-text {
+    font-weight: 500;
+  }
+
+  /* Form Section */
+  .form-section {
+    margin: 2rem 0;
+  }
+
+  /* Trust Section */
+  .trust-section {
+    background: white;
+    padding: 4rem 0;
+    margin: 4rem -1rem -2rem -1rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .trust-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .trust-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a365d;
+  }
+
+  .parody-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #718096;
+    font-size: 1.125rem;
+  }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .trust-item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .trust-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .trust-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .trust-item-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+  }
+
+  .trust-item-text {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .parody-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .parody-text {
+      font-size: 0.875rem;
+    }
+
+    .hero-section {
+      padding: 3rem 0;
+      margin: -1rem -0.5rem 2rem -0.5rem;
+    }
+
+    .hero-title {
+      font-size: 2.25rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+
+    .hero-features {
+      gap: 1rem;
+    }
+
+    .feature {
+      padding: 0.5rem 1rem;
+    }
+
+    .trust-section {
+      padding: 3rem 0;
+      margin: 3rem -0.5rem -1rem -0.5rem;
+    }
+
+    .trust-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .trust-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .trust-item {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 2rem 0;
+    }
+
+    .hero-content {
+      padding: 0 1rem;
+    }
+
+    .hero-title {
+      font-size: 1.875rem;
+    }
+
+    .hero-features {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .trust-content {
+      padding: 0 1rem;
+    }
+
+    .trust-title {
+      font-size: 1.75rem;
+    }
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .hero-section {
+      background: #000080;
+    }
+
+    .trust-item {
+      border-width: 2px;
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .trust-item {
+      transition: none;
+    }
+
+    .trust-item:hover {
+      transform: none;
+    }
+  }
+</style>
