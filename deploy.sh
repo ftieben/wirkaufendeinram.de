@@ -63,9 +63,17 @@ if [ -d "$CURRENT_DIR/site/dist" ]; then
     print_status "Copying built site files..."
     cp -r "$CURRENT_DIR/site/dist/"* "$WEB_ROOT/"
     
+    # Create data directory for submissions
+    print_status "Creating data directory for form submissions..."
+    mkdir -p "$WEB_ROOT/data"
+    chmod 755 "$WEB_ROOT/data"
+    
     # Set proper permissions
     chown -R www-data:www-data "$WEB_ROOT"
     chmod -R 755 "$WEB_ROOT"
+    
+    # Ensure data directory is writable
+    chmod 775 "$WEB_ROOT/data"
     
     print_status "Files copied successfully"
 else

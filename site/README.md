@@ -41,9 +41,41 @@ src/
 - 🚀 Static site generation with Astro
 - 📱 Responsive design
 - 🎯 RAM evaluation and pricing
-- 📧 Contact form integration
+- 📧 Form submission with email notifications
+- 🛡️ Rate limiting and spam protection
+- 💾 Data storage for follow-up communication
 - ⚡ Optimized performance
 - 🔍 SEO friendly
+
+### Form Submission System
+
+The site includes a complete form submission and notification system:
+
+- **Client-side validation** with real-time feedback
+- **Rate limiting** (3 submissions/hour per user)
+- **Spam detection** with pattern matching
+- **Email notifications** to your team
+- **Data storage** for follow-up communication
+- **Multiple deployment options** (PHP, Serverless)
+
+For setup instructions, see:
+- `INTEGRATION_GUIDE.md` - Quick start guide
+- `SUBMISSION_SETUP.md` - Detailed configuration
+
+### Testing
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+```
+
+The test suite includes:
+- Unit tests for validation and pricing logic
+- Property-based tests for correctness properties
+- Build verification tests
 
 ## Legal Compliance
 

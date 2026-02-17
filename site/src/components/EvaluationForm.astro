@@ -224,38 +224,46 @@
 
 <style>
   .evaluation-form-container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e2e8f0;
   }
 
   .form-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .form-header h2 {
-    color: #1a365d;
-    font-size: 2rem;
+    color: #1e293b;
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
   }
 
   .form-header p {
-    color: #4a5568;
-    font-size: 1.1rem;
+    color: #64748b;
+    font-size: 1.125rem;
     margin-bottom: 1rem;
+    font-weight: 400;
   }
 
   .parody-hint {
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-    border: 1px solid #f6ad55;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    border: 1px solid #d97706;
+    border-radius: 50px;
     padding: 0.75rem 1.5rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
+    box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
   }
 
   .hint-icon {
@@ -263,8 +271,8 @@
   }
 
   .hint-text {
-    color: #744210;
-    font-weight: 500;
+    color: #78350f;
+    font-weight: 600;
     font-size: 0.875rem;
   }
 
@@ -276,17 +284,18 @@
   }
 
   .form-section {
-    border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    padding: 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem;
     margin-bottom: 2rem;
+    background: #fafbfc;
   }
 
   .form-section legend {
-    font-weight: 600;
-    color: #2d3748;
-    padding: 0 0.5rem;
-    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    padding: 0 0.75rem;
+    font-size: 1.25rem;
   }
 
   .form-group {
@@ -295,26 +304,29 @@
 
   .form-group label {
     display: block;
-    font-weight: 500;
-    color: #2d3748;
+    font-weight: 600;
+    color: #1e293b;
     margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
   }
 
   .form-group input,
   .form-group select {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.875rem 1rem;
     border: 2px solid #e2e8f0;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 1rem;
-    transition: border-color 0.2s ease;
+    transition: all 0.2s ease;
+    background: #f8fafc;
   }
 
   .form-group input:focus,
   .form-group select:focus {
     outline: none;
-    border-color: #3182ce;
-    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    background: white;
   }
 
   .form-group input.error,
@@ -344,37 +356,46 @@
 
   .btn-primary,
   .btn-secondary {
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
     border: none;
-    font-size: 1rem;
+    font-size: 1.0625rem;
   }
 
   .btn-primary {
-    background-color: #3182ce;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
   }
 
   .btn-primary:hover {
-    background-color: #2c5aa0;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
   }
 
   .btn-primary:disabled {
-    background-color: #a0aec0;
+    background: #cbd5e0;
     cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
   }
 
   .btn-secondary {
-    background-color: #edf2f7;
-    color: #4a5568;
-    border: 1px solid #e2e8f0;
+    background-color: white;
+    color: #475569;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
 
   .btn-secondary:hover {
-    background-color: #e2e8f0;
+    background-color: #f8fafc;
+    border-color: #cbd5e0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   }
 
   .loading-state {
@@ -465,7 +486,16 @@
 
   @media (max-width: 768px) {
     .evaluation-form-container {
-      padding: 1rem;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+    }
+
+    .form-header h2 {
+      font-size: 1.875rem;
+    }
+
+    .form-section {
+      padding: 1.5rem;
     }
 
     .form-actions,
@@ -483,6 +513,7 @@
 <script>
   import { validateRAMSpecification, validateSellerContact } from '../lib/validation.js';
   import { generateQuote } from '../lib/pricing.js';
+  import { submitQuoteRequest } from '../lib/submission.js';
   import type { RAMSpecification, SellerContact, QuoteResponse, ValidationError } from '../lib/types.js';
 
   // Form elements with proper null safety
@@ -793,45 +824,90 @@
   }
 
   // Accept quote handler
-  function handleAcceptQuote(): void {
-    if (currentQuote) {
-      // Get the user's contact preferences
-      const formData = getFormData();
-      if (formData && formData.contact.preferredContact) {
-        const contactMethod = formData.contact.preferredContact;
-        const contactInfo = formData.contact;
-        
-        // Create a personalized message based on contact preference
+  async function handleAcceptQuote(): Promise<void> {
+    if (!currentQuote) return;
+    
+    const formData = getFormData();
+    if (!formData) return;
+    
+    const { ramSpec, contact } = formData;
+    
+    // Validate we have complete data
+    if (!ramSpec.type || !ramSpec.capacity || !ramSpec.speed || !ramSpec.brand || 
+        !ramSpec.condition || !ramSpec.quantity) {
+      alert('Missing RAM specification data. Please refresh and try again.');
+      return;
+    }
+    
+    if (!contact.name || !contact.email || !contact.phone || 
+        !contact.preferredContact || !contact.location) {
+      alert('Missing contact information. Please refresh and try again.');
+      return;
+    }
+    
+    // Show loading state
+    if (acceptQuoteButton) {
+      acceptQuoteButton.disabled = true;
+      acceptQuoteButton.textContent = 'Submitting...';
+    }
+    
+    try {
+      // Submit the quote request
+      const completeRamSpec: RAMSpecification = {
+        type: ramSpec.type,
+        capacity: ramSpec.capacity,
+        speed: ramSpec.speed,
+        brand: ramSpec.brand,
+        condition: ramSpec.condition,
+        quantity: ramSpec.quantity
+      };
+      
+      const completeContact: SellerContact = {
+        name: contact.name,
+        email: contact.email,
+        phone: contact.phone,
+        preferredContact: contact.preferredContact,
+        location: contact.location
+      };
+      
+      const result = await submitQuoteRequest(completeRamSpec, completeContact, currentQuote);
+      
+      if (result.success) {
+        // Create personalized message
         let message = 'Thank you for accepting our quote! ';
         
-        switch (contactMethod) {
+        switch (completeContact.preferredContact) {
           case 'email':
-            message += `We will contact you via email at ${contactInfo.email} within the timeframe specified in your quote.`;
+            message += `We will contact you via email at ${completeContact.email} within the timeframe specified in your quote.`;
             break;
           case 'phone':
-            message += `We will contact you via phone at ${contactInfo.phone} within the timeframe specified in your quote.`;
+            message += `We will contact you via phone at ${completeContact.phone} within the timeframe specified in your quote.`;
             break;
           case 'either':
-            message += `We will contact you via email (${contactInfo.email}) or phone (${contactInfo.phone}) within the timeframe specified in your quote.`;
+            message += `We will contact you via email (${completeContact.email}) or phone (${completeContact.phone}) within the timeframe specified in your quote.`;
             break;
-          default:
-            message += 'We will contact you soon to finalize the purchase.';
         }
         
-        // Show enhanced confirmation with contact preference details
-        showQuoteAcceptanceConfirmation(message, currentQuote.timeline);
+        // Show success confirmation
+        showQuoteAcceptanceConfirmation(message, currentQuote.timeline, result.submissionId);
       } else {
-        alert('Thank you! We will contact you soon to finalize the purchase.');
+        // Show error message
+        alert(result.message || 'Failed to submit quote request. Please try again.');
       }
-      
-      // In a real application, this would submit the quote acceptance to a backend service
-      // For now, we'll simulate the submission
-      simulateQuoteSubmission();
+    } catch (error) {
+      console.error('Error submitting quote:', error);
+      alert('An error occurred while submitting your quote. Please try again or contact us directly.');
+    } finally {
+      // Reset button state
+      if (acceptQuoteButton) {
+        acceptQuoteButton.disabled = false;
+        acceptQuoteButton.textContent = 'Accept This Quote';
+      }
     }
   }
 
   // Show enhanced quote acceptance confirmation
-  function showQuoteAcceptanceConfirmation(message: string, timeline: string): void {
+  function showQuoteAcceptanceConfirmation(message: string, timeline: string, submissionId?: string): void {
     // Create a more prominent confirmation dialog
     const confirmationHtml = `
       <div style="
@@ -860,6 +936,19 @@
           <p style="margin-bottom: 1rem; line-height: 1.5;">
             ${message}
           </p>
+          ${submissionId ? `
+          <div style="
+            background: #edf2f7;
+            padding: 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-family: monospace;
+            font-size: 0.875rem;
+            text-align: center;
+          ">
+            <strong>Reference ID:</strong> ${submissionId}
+          </div>
+          ` : ''}
           <div style="
             background: #f7fafc;
             padding: 1rem;
@@ -899,22 +988,6 @@
     };
   }
 
-  // Simulate quote submission (in a real app, this would be an API call)
-  function simulateQuoteSubmission(): void {
-    // Log the submission for debugging
-    console.log('Quote submission simulated:', {
-      quote: currentQuote,
-      timestamp: new Date().toISOString(),
-      contactInfo: getFormData()?.contact
-    });
-    
-    // In a real application, you would:
-    // 1. Send the quote acceptance to your backend API
-    // 2. Store the submission in a database
-    // 3. Trigger email notifications to your team
-    // 4. Set up follow-up reminders based on the timeline
-  }
-
   // Initialize form
   function initializeForm(): void {
     setupRealTimeValidation();
@@ -923,7 +996,11 @@
     if (form) form.addEventListener('submit', handleFormSubmission);
     if (clearButton) clearButton.addEventListener('click', handleClearForm);
     if (newQuoteButton) newQuoteButton.addEventListener('click', handleNewQuote);
-    if (acceptQuoteButton) acceptQuoteButton.addEventListener('click', handleAcceptQuote);
+    if (acceptQuoteButton) acceptQuoteButton.addEventListener('click', () => {
+      handleAcceptQuote().catch(error => {
+        console.error('Error in accept quote handler:', error);
+      });
+    });
   }
 
   // Initialize when DOM is loaded
