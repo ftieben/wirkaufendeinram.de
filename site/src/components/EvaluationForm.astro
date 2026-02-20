@@ -7,23 +7,23 @@
 
 <div class="evaluation-form-container">
   <div class="form-header">
-    <h2>Get Your RAM Quote Instantly</h2>
-    <p>Enter your RAM specifications below to receive an immediate price estimate</p>
+    <h2>Erhalten Sie sofort Ihr RAM-Angebot</h2>
+    <p>Geben Sie unten Ihre RAM-Spezifikationen ein, um eine sofortige Preisschätzung zu erhalten</p>
     <div class="parody-hint">
       <span class="hint-icon">🚗➡️💾</span>
-      <span class="hint-text">Just like selling a car, but way more nerdy!</span>
+      <span class="hint-text">Genau wie ein Auto verkaufen, aber viel nerdiger!</span>
     </div>
   </div>
 
   <form id="ram-evaluation-form" class="evaluation-form">
     <!-- RAM Specifications Section -->
     <fieldset class="form-section">
-      <legend>RAM Specifications</legend>
+      <legend>RAM-Spezifikationen</legend>
       
       <div class="form-group">
-        <label for="ram-type">RAM Type *</label>
+        <label for="ram-type">RAM-Typ *</label>
         <select id="ram-type" name="type" required>
-          <option value="">Select RAM Type</option>
+          <option value="">RAM-Typ auswählen</option>
           <option value="DDR3">DDR3</option>
           <option value="DDR4">DDR4</option>
           <option value="DDR5">DDR5</option>
@@ -32,9 +32,9 @@
       </div>
 
       <div class="form-group">
-        <label for="capacity">Capacity (GB) *</label>
+        <label for="capacity">Kapazität (GB) *</label>
         <select id="capacity" name="capacity" required>
-          <option value="">Select Capacity</option>
+          <option value="">Kapazität auswählen</option>
           <option value="1">1 GB</option>
           <option value="2">2 GB</option>
           <option value="4">4 GB</option>
@@ -48,24 +48,24 @@
       </div>
 
       <div class="form-group">
-        <label for="speed">Speed (MHz) *</label>
+        <label for="speed">Geschwindigkeit (MHz) *</label>
         <input 
           type="number" 
           id="speed" 
           name="speed" 
-          placeholder="e.g., 3200" 
+          placeholder="z.B. 3200" 
           min="800" 
           max="6400" 
           required
         />
         <div class="error-message" id="speed-error"></div>
-        <div class="help-text">Common speeds: DDR3 (800-2133), DDR4 (1600-3200), DDR5 (3200-6400)</div>
+        <div class="help-text">Übliche Geschwindigkeiten: DDR3 (800-2133), DDR4 (1600-3200), DDR5 (3200-6400)</div>
       </div>
 
       <div class="form-group">
-        <label for="brand">Brand *</label>
+        <label for="brand">Marke *</label>
         <select id="brand" name="brand" required>
-          <option value="">Select Brand</option>
+          <option value="">Marke auswählen</option>
           <option value="Corsair">Corsair</option>
           <option value="G.Skill">G.Skill</option>
           <option value="Kingston">Kingston</option>
@@ -84,24 +84,24 @@
       </div>
 
       <div class="form-group">
-        <label for="condition">Condition *</label>
+        <label for="condition">Zustand *</label>
         <select id="condition" name="condition" required>
-          <option value="">Select Condition</option>
-          <option value="new">New (unopened, with warranty)</option>
-          <option value="excellent">Excellent (like new, minimal use)</option>
-          <option value="good">Good (normal wear, fully functional)</option>
-          <option value="fair">Fair (visible wear, but working)</option>
+          <option value="">Zustand auswählen</option>
+          <option value="new">Neu (ungeöffnet, mit Garantie)</option>
+          <option value="excellent">Ausgezeichnet (wie neu, minimale Nutzung)</option>
+          <option value="good">Gut (normale Abnutzung, voll funktionsfähig)</option>
+          <option value="fair">Akzeptabel (sichtbare Abnutzung, aber funktioniert)</option>
         </select>
         <div class="error-message" id="condition-error"></div>
       </div>
 
       <div class="form-group">
-        <label for="quantity">Quantity *</label>
+        <label for="quantity">Anzahl *</label>
         <input 
           type="number" 
           id="quantity" 
           name="quantity" 
-          placeholder="Number of modules" 
+          placeholder="Anzahl der Module" 
           min="1" 
           max="100" 
           required
@@ -112,112 +112,112 @@
 
     <!-- Contact Information Section -->
     <fieldset class="form-section">
-      <legend>Contact Information</legend>
+      <legend>Kontaktinformationen</legend>
       
       <div class="form-group">
-        <label for="name">Full Name *</label>
+        <label for="name">Vollständiger Name *</label>
         <input 
           type="text" 
           id="name" 
           name="name" 
-          placeholder="Your full name" 
+          placeholder="Ihr vollständiger Name" 
           required
         />
         <div class="error-message" id="name-error"></div>
       </div>
 
       <div class="form-group">
-        <label for="email">Email Address *</label>
+        <label for="email">E-Mail-Adresse *</label>
         <input 
           type="email" 
           id="email" 
           name="email" 
-          placeholder="your.email@example.com" 
+          placeholder="ihre.email@beispiel.de" 
           required
         />
         <div class="error-message" id="email-error"></div>
       </div>
 
       <div class="form-group">
-        <label for="phone">Phone Number *</label>
+        <label for="phone">Telefonnummer *</label>
         <input 
           type="tel" 
           id="phone" 
           name="phone" 
-          placeholder="(555) 123-4567" 
+          placeholder="0123 456789" 
           required
         />
         <div class="error-message" id="phone-error"></div>
       </div>
 
       <div class="form-group">
-        <label for="preferred-contact">Preferred Contact Method *</label>
+        <label for="preferred-contact">Bevorzugte Kontaktmethode *</label>
         <select id="preferred-contact" name="preferredContact" required>
-          <option value="">Select preference</option>
-          <option value="email">Email</option>
-          <option value="phone">Phone</option>
-          <option value="either">Either email or phone</option>
+          <option value="">Präferenz auswählen</option>
+          <option value="email">E-Mail</option>
+          <option value="phone">Telefon</option>
+          <option value="either">E-Mail oder Telefon</option>
         </select>
         <div class="error-message" id="preferredContact-error"></div>
       </div>
 
       <div class="form-group">
-        <label for="location">Location (City, State) *</label>
+        <label for="location">Standort (Stadt, Bundesland) *</label>
         <input 
           type="text" 
           id="location" 
           name="location" 
-          placeholder="e.g., San Francisco, CA" 
+          placeholder="z.B. München, Bayern" 
           required
         />
         <div class="error-message" id="location-error"></div>
-        <div class="help-text">Used for shipping cost estimates</div>
+        <div class="help-text">Wird für Versandkostenschätzungen verwendet</div>
       </div>
     </fieldset>
 
     <!-- Form Actions -->
     <div class="form-actions">
-      <button type="button" id="clear-form" class="btn-secondary">Clear Form</button>
-      <button type="submit" id="submit-form" class="btn-primary">Get My Quote</button>
+      <button type="button" id="clear-form" class="btn-secondary">Formular löschen</button>
+      <button type="submit" id="submit-form" class="btn-primary">Mein Angebot erhalten</button>
     </div>
 
     <!-- Loading State -->
     <div id="loading-state" class="loading-state" style="display: none;">
       <div class="spinner"></div>
-      <p>Calculating your quote...</p>
+      <p>Ihr Angebot wird berechnet...</p>
     </div>
   </form>
 
   <!-- Quote Results Section -->
   <div id="quote-results" class="quote-results" style="display: none;">
     <div class="quote-header">
-      <h3>Your RAM Quote</h3>
+      <h3>Ihr RAM-Angebot</h3>
     </div>
     <div class="quote-content">
       <div class="estimated-value">
-        <span class="label">Estimated Value:</span>
-        <span class="value" id="quote-value">$0.00</span>
+        <span class="label">Geschätzter Wert:</span>
+        <span class="value" id="quote-value">0,00 €</span>
       </div>
       <div class="price-range">
-        <span class="label">Price Range:</span>
-        <span class="range" id="quote-range">$0.00 - $0.00</span>
+        <span class="label">Preisspanne:</span>
+        <span class="range" id="quote-range">0,00 € - 0,00 €</span>
       </div>
       <div class="timeline">
-        <span class="label">Response Time:</span>
+        <span class="label">Antwortzeit:</span>
         <span class="time" id="quote-timeline">-</span>
       </div>
       <div class="factors">
-        <h4>Pricing Factors:</h4>
+        <h4>Preisfaktoren:</h4>
         <ul id="quote-factors"></ul>
       </div>
       <div class="next-steps">
-        <h4>Next Steps:</h4>
+        <h4>Nächste Schritte:</h4>
         <ol id="quote-next-steps"></ol>
       </div>
     </div>
     <div class="quote-actions">
-      <button type="button" id="new-quote" class="btn-secondary">Get Another Quote</button>
-      <button type="button" id="accept-quote" class="btn-primary">Accept This Quote</button>
+      <button type="button" id="new-quote" class="btn-secondary">Weiteres Angebot erhalten</button>
+      <button type="button" id="accept-quote" class="btn-primary">Dieses Angebot annehmen</button>
     </div>
   </div>
 </div>
